@@ -5,13 +5,13 @@
 class Forgeguardian < Formula
   desc "AI-powered supply chain security scanner for software packages"
   homepage "https://github.com/mah3sec/forgeguardian"
-  version "3.1.0"
+  version "3.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.0/forgeguardian_3.1.0_darwin_amd64.tar.gz"
-      sha256 "730649ef016c9ad44e8f1bb8b2c36646f51aa7168089694f0418291bd548a8f4"
+      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.1/forgeguardian_3.1.1_darwin_amd64.tar.gz"
+      sha256 "6adbcc903880faa435abc4961d3940b26f5f99747796bca754344ca2d17b2e27"
 
       define_method(:install) do
         bin.install "fgctl"
@@ -20,8 +20,8 @@ class Forgeguardian < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.0/forgeguardian_3.1.0_darwin_arm64.tar.gz"
-      sha256 "0ec6ab5314bd74cc3c04ea9b65495639ca458dcf19685fb0f912fdd2bd71f20c"
+      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.1/forgeguardian_3.1.1_darwin_arm64.tar.gz"
+      sha256 "df30b5cd0fd1e1ee6066c7e9d8aff04437da2f508f0662cab832b8faf6b46ffc"
 
       define_method(:install) do
         bin.install "fgctl"
@@ -33,8 +33,8 @@ class Forgeguardian < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.0/forgeguardian_3.1.0_linux_amd64.tar.gz"
-      sha256 "dac67e5d1ed0198406b46b74613fbbac7466fbd77d4d5e88ab617af6c31404bf"
+      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.1/forgeguardian_3.1.1_linux_amd64.tar.gz"
+      sha256 "994983e84429b92161423adbda6aac7fdb82dc06388ef82d8dea9199fb27c5bc"
       define_method(:install) do
         bin.install "fgctl"
         bin.install "fg-agent"
@@ -42,8 +42,8 @@ class Forgeguardian < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.0/forgeguardian_3.1.0_linux_arm64.tar.gz"
-      sha256 "2961988b430ca6114bb3668e3ba3d074725628c6801d91ff914ef7f55a7c08e5"
+      url "https://github.com/mah3sec/forgeguardian/releases/download/v3.1.1/forgeguardian_3.1.1_linux_arm64.tar.gz"
+      sha256 "ab4af38e5d8fb6aeec7f29a1b671dc288ff76883278dc8d1702e88cf2d4355c6"
       define_method(:install) do
         bin.install "fgctl"
         bin.install "fg-agent"
